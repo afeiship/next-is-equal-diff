@@ -5,9 +5,11 @@
     test('nx.isEqualDiff empty or len = 1', function () {
       var arr1 = [];
       var arr2 = [1];
+      var arr3 = [1, 1, 1];
 
       expect(nx.isEqualDiff(arr1)).toBe(false);
       expect(nx.isEqualDiff(arr2)).toBe(false);
+      expect(nx.isEqualDiff(arr3, 0)).toBe(true);
     });
 
     test('nx.isEqualDiff len > 1', function () {

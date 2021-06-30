@@ -4,7 +4,7 @@
   var defaults = { context: global };
 
   nx.isEqualDiff = function (inArray, inValue) {
-    var value = inValue || 1;
+    var value = typeof inValue !== 'undefined' ? inValue : 1;
     var len_ = inArray.length - 1;
     if (len_ <= 0) return false;
     var result = true;
