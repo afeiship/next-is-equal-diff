@@ -10,7 +10,7 @@
     for (var i = 0; i < len_; i++) {
       var current = inArray[i];
       var next = inArray[i + 1];
-      result &&= next - current === value;
+      result = result && next - current === value;
     }
     return result;
   };
