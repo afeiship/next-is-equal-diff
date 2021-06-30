@@ -1,7 +1,6 @@
 (function () {
   var global = typeof window !== 'undefined' ? window : this || Function('return this')();
   var nx = global.nx || require('@jswork/next');
-  var defaults = { context: global };
 
   nx.isEqualDiff = function (inArray, inValue) {
     var value = typeof inValue !== 'undefined' ? inValue : 1;
